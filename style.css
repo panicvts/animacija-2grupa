@@ -1,0 +1,80 @@
+/* div{
+    width: 250px;
+    height: 250px;
+    background-color: red;
+    position: absolute;
+    left: 20px;
+
+    animation-name: animacija;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+} */
+
+.auto{
+    width: 150px;
+    height: 150px;
+    background-image: url('auto.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+
+    position: absolute;
+    left: 20px;
+    top: 120px;
+
+    animation-name: crash;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+  	/*webkit*/
+     -webkit-animation-fill-mode: forwards;
+    /* animation-iteration-count: infinite; */
+    /* animation-direction: alternate; */
+}
+
+.zgrada{
+    width: 300px;
+    height: 400px;
+    background-image: url('zgrada.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+
+    position: absolute;
+    right: 20px;
+    top: 20px;
+
+}
+
+@keyframes crash {
+
+    99%{
+        left: 1600px;
+        background-image: url('auto.png');
+    }
+
+    100%{
+        left: 1610px;
+        background-image: url('crash.png');
+    }
+}
+
+.srce{
+    background-image: url('srce.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 400px;
+    height: 400px;
+    margin: 250px auto;
+
+    animation-name: srce;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes srce {
+
+    100%{
+        transform: scale(1.3);
+    }
+    
+}
